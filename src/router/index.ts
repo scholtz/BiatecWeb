@@ -18,14 +18,34 @@ const router = createRouter({
       component: PublicHomeView
     },
     {
-      path: '/about-asa-gold',
-      name: 'auth-about-asa-gold',
+      path: '/list-my-invoices',
+      name: 'list-my-invoices',
+      component: () => import('../views/Invoice/ListInvoices.vue')
+    },
+    {
+      path: '/issue-invoice',
+      name: 'issue-invoice',
+      component: () => import('../views/Invoice/IssueInvoiceView.vue')
+    },
+    {
+      path: '/manage-contacts',
+      name: 'manage-contacts',
+      component: () => import('../views/Contact/ManageContactView.vue')
+    },
+    {
+      path: '/about-bitatec-accounting',
+      name: 'about-bitatec-accounting',
       component: () => import('../views/AboutUsView.vue')
     },
     {
       path: '/contact-us',
       name: 'auth-contact-us',
       component: () => import('../views/ContactUsView.vue')
+    },
+    {
+      path: '/biatec-accounting-pricing',
+      name: 'biatec-accounting-pricing',
+      component: () => import('../views/PricingView.vue')
     },
     {
       path: '/settings',

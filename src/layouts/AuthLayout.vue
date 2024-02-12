@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TopHeader from '@/components/TopHeader.vue'
+import TopHeader from '@/components/TopHeader2.vue'
 import PageFooter from '@/components/PageFooter.vue'
 import ForcedEmailVerification from '@/components/ForcedEmailVerification.vue'
 
@@ -7,13 +7,15 @@ import { onMounted, ref } from 'vue'
 
 import { useToast } from 'primevue/usetoast'
 import { useAppStore } from '@/stores/app'
-
+import Button from 'primevue/button'
 const props = defineProps<{
   hideTopMenu: boolean
 }>()
 
 const store = useAppStore()
 const toast = useToast()
+
+const forceEmailValidation = false
 
 import { AlgorandAuthentication } from 'algorand-authentication-component-vue'
 import type { IAuthenticationStore, INotification } from 'algorand-authentication-component-vue'
@@ -57,11 +59,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-column justify-content-center min-h-full p-0 m-0">
+  <div class="flex flex-column min-h-full p-0 m-0">
     <Toast />
+    <TopHeader :hideTopMenu="props.hideTopMenu" />
     <Suspense>
       <AlgorandAuthentication
-        arc14Realm="ASA.Gold"
+        arc14Realm="BiatecAccounting"
         @onStateChange="onStateChange"
         @onNotification="onNotification"
         ref="authComponent"
@@ -72,12 +75,32 @@ onMounted(() => {
         :algodToken="store.state.algodToken"
         :store="store.state.authState"
       >
-        <TopHeader :hideTopMenu="props.hideTopMenu" />
-        <ForcedEmailVerification>
-          <div class="flex-grow-1">
-            <slot />
+        <div
+          v-if="store.state.authState.isAuthenticated && forceEmailValidation"
+          class="flex flex-column flex-grow-1 m-2"
+        >
+          <ForcedEmailVerification>
+            <div class="flex-grow-1">
+              <slot />
+            </div>
+          </ForcedEmailVerification>
+        </div>
+        <div
+          v-else-if="store.state.authState.isAuthenticated"
+          class="flex flex-column flex-grow-1 m-2"
+        >
+          <slot />
+        </div>
+        <div v-else class="flex flex-column flex-grow-1">
+          <div class="flex-grow-1 m-2 text-center">
+            <h1>Authenticate please</h1>
+
+            <Button @click="store.state.authComponent?.auth()">
+              Use algorand authentication
+              <span class="pi pi-user ml-2"></span
+            ></Button>
           </div>
-        </ForcedEmailVerification>
+        </div>
       </AlgorandAuthentication>
     </Suspense>
     <PageFooter />

@@ -48,8 +48,8 @@ const defaultState: IState = {
   algodHost: 'https://testnet-api.algonode.cloud',
   algodPort: 443,
   algodToken: '',
-  theme: 'md-light-indigo',
-  currentTheme: 'md-light-indigo',
+  theme: 'lara-dark-teal',
+  currentTheme: '_empty',
   authState: new AuthenticationStore(),
   tokens: tokens,
   customToken: null,
@@ -118,11 +118,15 @@ export const useAppStore = defineStore('app', () => {
   } catch (e: any) {
     console.error(e)
   }
-  initState.currentTheme = 'md-light-indigo'
+  let lastTheme = localStorage.getItem('lastTheme')
+  if (!lastTheme) lastTheme = 'lara-dark-teal'
+  initState.theme = lastTheme
+  console.log('initState.currentTheme:', initState.currentTheme, initState.theme)
   if (initState.currentTheme != initState.theme) {
     console.log('setting theme:', initState.theme)
     console.log(`setting theme from ${initState.currentTheme} to ${initState.theme}`)
     PrimeVue.changeTheme(initState.currentTheme, initState.theme, 'theme-link')
+    PrimeVue.changeTheme(initState.currentTheme, initState.theme, 'theme-link-custom')
     initState.currentTheme = initState.theme
   }
 
@@ -156,6 +160,7 @@ export const useAppStore = defineStore('app', () => {
       if (state.currentTheme != state.theme) {
         console.log(`setting theme from ${state.currentTheme} to ${state.theme}`)
         PrimeVue.changeTheme(state.currentTheme, state.theme, 'theme-link')
+        PrimeVue.changeTheme(state.currentTheme, state.theme, 'theme-link-custom')
         state.currentTheme = state.theme
       }
       if (configData) {
