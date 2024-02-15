@@ -4,13 +4,14 @@ import AOS from 'aos'
 import Card from 'primevue/card'
 import 'aos/dist/aos.css'
 import { onMounted } from 'vue'
-
 onMounted(() => {
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true
-  })
+  setTimeout(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    })
+  }, 10)
 })
 
 /* eslint-disable no-useless-escape */
