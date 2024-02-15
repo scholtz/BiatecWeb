@@ -80,11 +80,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - testnet.aledger.biatec.io
-        - www.testnet.aledger.biatec.io
-      secretName: tls-testnet.aledger.biatec.io
+        - testnet.accounting.biatec.io
+        - www.testnet.accounting.biatec.io
+      secretName: tls-testnet.accounting.biatec.io
   rules:
-    - host: testnet.aledger.biatec.io
+    - host: testnet.accounting.biatec.io
       http:
         paths:
           - path: /(.*)
@@ -94,7 +94,7 @@ spec:
                 name: aledger-testnet-service
                 port:
                   number: 8080
-    - host: www.testnet.aledger.biatec.io
+    - host: www.testnet.accounting.biatec.io
       http:
         paths:
           - path: /(.*)
