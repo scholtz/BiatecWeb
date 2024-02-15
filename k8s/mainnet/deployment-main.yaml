@@ -73,18 +73,18 @@ metadata:
   name: aledger-web-main
   namespace: aledger
   annotations:
-    kubernetes.io/ingress.class: 'nginx'
-    nginx.ingress.kubernetes.io/backend-protocol: 'HTTP'
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
     cert-manager.io/cluster-issuer: letsencrypt
     nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   tls:
     - hosts:
-        - ledger.biatec.io
-        - www.ledger.biatec.io
-      secretName: tls-ledger.biatec.io
+        - accounting.biatec.io
+        - www.accounting.biatec.io
+      secretName: tls-accounting.biatec.io
   rules:
-    - host: ledger.biatec.io
+    - host: accounting.biatec.io
       http:
         paths:
           - path: /(.*)
@@ -94,7 +94,7 @@ spec:
                 name: aledger-mainnet-service
                 port:
                   number: 8080
-    - host: www.ledger.biatec.io
+    - host: www.accounting.biatec.io
       http:
         paths:
           - path: /(.*)
