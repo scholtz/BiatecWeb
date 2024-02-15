@@ -1,4 +1,4 @@
-kubectl apply -f deployment-testnet.yaml -n asagold
-kubectl delete configmap asagold-testnet-conf -n asagold
-kubectl create configmap asagold-testnet-conf --from-file=conf -n asagold
-kubectl rollout restart deployment/asagold-web-testnet-deployment -n asagold
+kubectl apply -f deployment-testnet.yaml -n aledger
+kubectl delete configmap aledger-testnet-conf -n aledger
+kubectl create configmap aledger-testnet-conf --from-file=conf -n aledger
+kubectl rollout restart deployment/aledger-web-testnet-deployment -n aledger
