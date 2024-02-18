@@ -10,7 +10,6 @@ import router from './router'
 
 import PrimeVue from 'primevue/config'
 import ToastService from 'primevue/toastservice'
-import Toast from 'primevue/toast'
 import Ripple from 'primevue/ripple'
 
 const app = createApp(App)
@@ -23,6 +22,5 @@ app.use(router)
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 
-app.component('Toast', Toast)
 app.directive('ripple', Ripple)
 app.mount('#app')

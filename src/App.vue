@@ -2,8 +2,6 @@
 import { RouterView } from 'vue-router'
 import { useAppStore } from '@/stores/app'
 const store = useAppStore()
-console.log('store.init', store)
-
 import { Gradient } from 'whatamesh'
 import { onMounted, watch } from 'vue'
 
