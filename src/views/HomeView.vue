@@ -19,6 +19,7 @@ import IconGold from '@/assets/projects/gold.svg?raw'
 import IconAccounting from '@/assets/projects/accounting.svg?raw'
 import IconBiatec from '@/assets/projects/biatec.svg?raw'
 import IconDEX from '@/assets/projects/dex.svg?raw'
+import IconScheduler from '@/assets/projects/scheduler.svg?raw'
 
 /* eslint-disable no-useless-escape */
 </script>
@@ -107,14 +108,13 @@ import IconDEX from '@/assets/projects/dex.svg?raw'
             <div class="grid">
               <div class="col-12">
                 <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconAccounting"></div>
+                  <div class="svg-image" v-html="IconScheduler"></div>
                 </h2>
-                Biatec accounting helps you with accounting related issues. In the development is
-                the invoicing application so that you can issue the algorand invoices in legal
-                compliance.
+                Biatec scheduler helps anyone on algorand blockchain to execute periodically smart
+                contracts.
                 <div>
-                  <a href="https://accounting.biatec.io" target="_blank">
-                    <Button class="mt-4">Issue your first invoice today</Button>
+                  <a href="https://scheduler.biatec.io" target="_blank">
+                    <Button class="mt-4">DCA onchain</Button>
                   </a>
                 </div>
               </div>
@@ -135,6 +135,28 @@ import IconDEX from '@/assets/projects/dex.svg?raw'
                 <div>
                   <a href="https://nft.biatec.io" target="_blank">
                     <Button class="mt-4">Get one of our NFTs now</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </Card>
+      </div>
+
+      <div data-aos="fade-left" class="m-2 md:m-6">
+        <Card class="col-12 md:col-6 md:col-offset-1">
+          <template #content>
+            <div class="grid">
+              <div class="col-12">
+                <h2 class="text-primary">
+                  <div class="svg-image" v-html="IconAccounting"></div>
+                </h2>
+                Biatec accounting helps you with accounting related issues. In the development is
+                the invoicing application so that you can issue the algorand invoices in legal
+                compliance.
+                <div>
+                  <a href="https://accounting.biatec.io" target="_blank">
+                    <Button class="mt-4">Issue your first invoice today</Button>
                   </a>
                 </div>
               </div>

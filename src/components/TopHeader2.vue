@@ -66,6 +66,42 @@ const makeMenu = () => {
           ]
         },
         {
+          label: 'Decentralized scheduler',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'Scheduler builder',
+              icon: 'pi pi-star',
+              url: 'https://scheduler.biatec.io'
+            },
+            {
+              label: 'Scheduler API',
+              icon: 'pi pi-star',
+              url: 'https://api-scheduler.biatec.io'
+            },
+            {
+              label: 'Documentation',
+              icon: 'pi pi-star',
+              url: 'https://docs-scheduler.biatec.io/'
+            },
+            {
+              label: 'Source code BE',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/BiatecCron'
+            },
+            {
+              label: 'Source code builder',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/BiatecCronBuilder'
+            },
+            {
+              label: 'Wallet integration source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/wallet/blob/master/src/pages/Account/ScheduledPayments.vue'
+            }
+          ]
+        },
+        {
           label: 'Aramid Bridge',
           icon: 'pi pi-star',
           items: [
