@@ -16,6 +16,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: PublicHomeView
+    },
+    {
+      path: '/contact-biatec',
+      name: 'contact-biatec',
+      component: () => import('../views/ContactBiatec.vue')
     }
   ]
 })

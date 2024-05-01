@@ -163,6 +163,11 @@ const makeMenu = () => {
       ]
     },
     {
+      label: 'Contact us',
+      icon: 'pi pi-phone',
+      route: '/contact-biatec'
+    },
+    {
       label: 'Theme',
       icon: 'pi pi-palette',
       items: makeThemes()

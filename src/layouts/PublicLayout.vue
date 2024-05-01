@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TopHeader from '@/components/TopHeader2.vue'
+import TopHeader from '@/components/PageHeader.vue'
 import PageFooter from '@/components/PageFooter.vue'
 </script>
 <template>
