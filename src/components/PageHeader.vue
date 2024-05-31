@@ -129,6 +129,27 @@ const makeMenu = () => {
           ]
         },
         {
+          label: 'Biatec Learn',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'FE',
+              icon: 'pi pi-star',
+              url: 'https://learn.biatec.io'
+            },
+            {
+              label: 'Frontend source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/biatec-learn-fe'
+            },
+            {
+              label: 'Smart contract source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/biatec-learn'
+            }
+          ]
+        },
+        {
           label: 'NFTs',
           icon: 'pi pi-star',
           items: [
