@@ -22,7 +22,12 @@ const makeMenu = () => {
           icon: 'pi pi-star',
           items: [
             {
-              label: 'A-Wallet web',
+              label: 'Biatec Wallet',
+              icon: 'pi pi-star',
+              url: 'https://wallet.biatec.io'
+            },
+            {
+              label: 'A-Wallet',
               icon: 'pi pi-star',
               url: 'https://www.a-wallet.net'
             },
@@ -98,6 +103,17 @@ const makeMenu = () => {
               label: 'Wallet integration source code',
               icon: 'pi pi-star',
               url: 'https://github.com/scholtz/wallet/blob/master/src/pages/Account/ScheduledPayments.vue'
+            }
+          ]
+        },
+        {
+          label: 'Biatec Audits',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'Biatec Audits Web',
+              icon: 'pi pi-star',
+              url: 'https://audits.biatec.io'
             }
           ]
         },

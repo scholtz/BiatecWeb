@@ -20,6 +20,8 @@ import IconAccounting from '@/assets/projects/accounting.svg?raw'
 import IconBiatec from '@/assets/projects/biatec.svg?raw'
 import IconDEX from '@/assets/projects/dex.svg?raw'
 import IconScheduler from '@/assets/projects/scheduler.svg?raw'
+import IconWallet from '@/assets/projects/wallet.svg?raw'
+import IconAudits from '@/assets/projects/audits.svg?raw'
 
 /* eslint-disable no-useless-escape */
 </script>
@@ -157,6 +159,49 @@ import IconScheduler from '@/assets/projects/scheduler.svg?raw'
                 <div>
                   <a href="https://accounting.biatec.io" target="_blank">
                     <Button class="mt-4">Issue your first invoice today</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </Card>
+      </div>
+
+      <div data-aos="fade-right" class="m-2 md:m-6">
+        <Card class="col-12 md:col-offset-5 md:col-6">
+          <template #content>
+            <div class="grid">
+              <div class="col-12">
+                <h2 class="text-primary">
+                  <div class="svg-image" v-html="IconWallet"></div>
+                </h2>
+
+                Biatec Wallet is the first Algorand open source wallet started back in 2021, and is
+                feature rich including multisig support, periodic payment scheduler and multiple dex
+                aggregators support.
+                <div>
+                  <a href="https://wallet.biatec.io" target="_blank">
+                    <Button class="mt-4">Go to the Wallet</Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </template>
+        </Card>
+      </div>
+
+      <div data-aos="fade-left" class="m-2 md:m-6">
+        <Card class="col-12 md:col-6 md:col-offset-1">
+          <template #content>
+            <div class="grid">
+              <div class="col-12">
+                <h2 class="text-primary">
+                  <div class="svg-image" v-html="IconAudits"></div>
+                </h2>
+                <p>Do audits of your solution with Biatec.</p>
+                <div>
+                  <a href="https://audits.biatec.io" target="_blank">
+                    <Button class="mt-4">Do audits</Button>
                   </a>
                 </div>
               </div>
