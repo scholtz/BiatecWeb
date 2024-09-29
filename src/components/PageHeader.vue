@@ -127,9 +127,14 @@ const makeMenu = () => {
               url: 'https://www.aramid.finance'
             },
             {
-              label: 'Aramid Bridge - Voi2Algo',
+              label: 'Aramid Bridge App',
               icon: 'pi pi-star',
-              url: 'https://voitest.k8s.aramid.finance'
+              url: 'https://app.aramid.finance'
+            },
+            {
+              label: 'Source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/AramidFinance/aramid-bridge-fe-vue'
             }
           ]
         },
