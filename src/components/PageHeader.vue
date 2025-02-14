@@ -182,6 +182,27 @@ const makeMenu = () => {
           ]
         },
         {
+          label: 'Explodinos Game',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'Explodinos NFT Game',
+              icon: 'pi pi-star',
+              url: 'https://www.explodinos.com'
+            },
+            {
+              label: 'Web app source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/explodinos-web'
+            },
+            {
+              label: 'Server source code',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/explodinos-api'
+            }
+          ]
+        },
+        {
           label: 'Voting',
           icon: 'pi pi-star',
           items: [
