@@ -11,6 +11,7 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 import ToastService from 'primevue/toastservice'
 import Ripple from 'primevue/ripple'
+import { MotionPlugin } from '@vueuse/motion'
 
 const app = createApp(App)
 
@@ -18,6 +19,7 @@ app.use(PrimeVue, { ripple: true })
 app.use(ToastService)
 app.use(createPinia())
 app.use(router)
+app.use(MotionPlugin)
 
 import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'

@@ -1,19 +1,7 @@
 <script setup lang="ts">
 import Layout from '@/layouts/PublicLayout.vue'
-import AOS from 'aos'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
-import 'aos/dist/aos.css'
-import { onMounted } from 'vue'
-onMounted(() => {
-  setTimeout(() => {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    })
-  }, 10)
-})
 import IconNFTs from '@/assets/projects/nfts.svg?raw'
 import IconGold from '@/assets/projects/gold.svg?raw'
 import IconAccounting from '@/assets/projects/accounting.svg?raw'
@@ -28,7 +16,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
 <template>
   <Layout :hideTopMenu="false">
     <div class="text-center">
-      <div data-aos="fade-right" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-offset-5 md:col-6">
           <template #content>
             <div class="grid">
@@ -58,7 +46,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
         </Card>
       </div>
 
-      <div data-aos="fade-left" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-6 md:col-offset-1">
           <template #content>
             <div class="grid">
@@ -79,7 +67,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
         </Card>
       </div>
 
-      <div data-aos="fade-right" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-offset-5 md:col-6">
           <template #content>
             <div class="grid">
@@ -104,7 +92,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
         </Card>
       </div>
 
-      <div data-aos="fade-left" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-6 md:col-offset-1">
           <template #content>
             <div class="grid">
@@ -145,7 +133,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
         </Card>
       </div>
 
-      <div data-aos="fade-left" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-6 md:col-offset-1">
           <template #content>
             <div class="grid">
@@ -190,7 +178,7 @@ import IconAudits from '@/assets/projects/audits.svg?raw'
         </Card>
       </div>
 
-      <div data-aos="fade-left" class="m-2 md:m-6">
+      <div v-motion-fade-visible class="m-2 md:m-6">
         <Card class="col-12 md:col-6 md:col-offset-1">
           <template #content>
             <div class="grid">

@@ -150,6 +150,22 @@ const makeMenu = () => {
           ]
         },
         {
+          label: 'Biatec AVM Gas Station',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'Gas Station App',
+              icon: 'pi pi-star',
+              url: 'https://gas-station.biatec.io'
+            },
+            {
+              label: 'Source code - SC, API, FE',
+              icon: 'pi pi-star',
+              url: 'http://github.com/scholtz/AVMGasStation'
+            }
+          ]
+        },
+        {
           label: 'Biatec Learn',
           icon: 'pi pi-star',
           items: [

@@ -1,20 +1,8 @@
 <script setup lang="ts">
 import Layout from '@/layouts/PublicLayout.vue'
-import AOS from 'aos'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
-import 'aos/dist/aos.css'
 import { onMounted } from 'vue'
-onMounted(() => {
-  setTimeout(() => {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    })
-  }, 10)
-})
-
 /* eslint-disable no-useless-escape */
 </script>
 <template>
@@ -22,7 +10,7 @@ onMounted(() => {
     <h1 class="text-center">Contact us</h1>
     <p class="text-center">Prefered communication channel is Discord.</p>
 
-    <div data-aos="fade-left" class="m-2 md:m-6">
+    <div v-motion-fade-visible class="m-2 md:m-6">
       <Card class="col-12 md:col-6 md:col-offset-1">
         <template #content>
           <div class="grid">
@@ -43,7 +31,7 @@ onMounted(() => {
       </Card>
     </div>
 
-    <div data-aos="fade-right" class="m-2 md:m-6">
+    <div v-motion-fade-visible class="m-2 md:m-6">
       <Card class="col-12 md:col-offset-5 md:col-6">
         <template #content>
           <div class="grid">
@@ -62,7 +50,7 @@ onMounted(() => {
       </Card>
     </div>
 
-    <div data-aos="fade-left" class="m-2 md:m-6">
+    <div v-motion-fade-visible class="m-2 md:m-6">
       <Card class="col-12 md:col-6 md:col-offset-1">
         <template #content>
           <div class="grid">
@@ -81,7 +69,7 @@ onMounted(() => {
       </Card>
     </div>
 
-    <div data-aos="fade-right" class="m-2 md:m-6">
+    <div v-motion-fade-visible class="m-2 md:m-6">
       <Card class="col-12 md:col-offset-5 md:col-6">
         <template #content>
           <div class="grid">
