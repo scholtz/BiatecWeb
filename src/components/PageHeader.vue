@@ -71,6 +71,37 @@ const makeMenu = () => {
           ]
         },
         {
+          label: 'Biatec Identity',
+          icon: 'pi pi-star',
+          items: [
+            {
+              label: 'Web app',
+              icon: 'pi pi-star',
+              url: 'https://identity.biatec.io'
+            },
+            {
+              label: 'Identity web github',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/biatec-identity'
+            },
+            {
+              label: 'DeRec Cryptography Github',
+              icon: 'pi pi-star',
+              url: 'https://github.com/derecalliance/cryptography/pull/32'
+            },
+            {
+              label: 'BiatecIdentityHelper',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/BiatecIdentityHelper'
+            },
+            {
+              label: 'BiatecIdentityGateway',
+              icon: 'pi pi-star',
+              url: 'https://github.com/scholtz/BiatecIdentityGateway'
+            }
+          ]
+        },
+        {
           label: 'Decentralized scheduler',
           icon: 'pi pi-star',
           items: [
