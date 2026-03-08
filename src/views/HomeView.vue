@@ -16,213 +16,160 @@ import IconIdentity from '@/assets/projects/identity.svg?raw'
 </script>
 <template>
   <Layout :hideTopMenu="false">
-    <div class="text-center">
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-offset-5 md:col-6">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconBiatec"></div>
-                </h2>
-                <p>
-                  First gold and silver coins in usage at 500 BC to 100 BC around Bratislava area
-                  were minted with label BIATEC. Slovak National Bank used the Biatec coin image on
-                  the official slovak fiat currency before EUR was adopted.
-                </p>
-                <p>
-                  We believe that Algorand and whole AVM ecosystem provides new form of digital
-                  identity and payments solutions. The brand name Biatec creates for us historic
-                  narrative as we live now the historic moments of early crypto adoption.
-                </p>
-                <p>
-                  Algorand is novel distributed ledger technology (DLT) which does not fork because
-                  of efficiency of PPoS. It provides instant transaction finality, sub 3 second
-                  economic finality and has highest AMM swap throughput. Users do not pay for failed
-                  transactions and each transfer of value even in milions costs less then a penny.
-                </p>
-              </div>
-            </div>
-          </template>
-        </Card>
+    <div class="flex flex-column h-full">
+      <div class="text-left">
+        <div class="main-logo" v-html="IconBiatec"></div>
       </div>
-
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-6 md:col-offset-1">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconDEX"></div>
-                </h2>
-                With help from Algorand and all expert governors in the xgov program we are building
-                Concentrated liqudity AMM on Algorand. Stay tuned.
-                <div>
-                  <a href="https://dex.biatec.io" target="_blank">
-                    <Button class="mt-4">Go to DEX</Button>
-                  </a>
+      <div class="flex-grow-1"></div>
+      <Card class="m-0 text-center">
+        <template #content>
+          <div class="flex justify-center">
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2 justify-items-center items-center text-center"
+            >
+              <a href="https://dex.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  CLAMM
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-offset-5 md:col-6">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconGold"></div>
-                </h2>
-                In november 2023 we launched to mainnet the novel gold tokenization platform -
-                ASA.Gold. Everybody can see the true composition of the gold reserves. For each gold
-                item in reserves we minted the NFT, and can be purchased in our onchain eshop. At
-                our secondary NFT marketplace you can sell your NFTs at higher price, you can use
-                other algorand's NFT marketplaces or you can redeem the gold item by parcel delivery
-                to your home address.
-                <div>
-                  <a href="https://www.asa.gold" target="_blank">
-                    <Button class="mt-4">Get your GOLD now!</Button>
-                  </a>
+              </a>
+              <a href="https://google.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  MCP
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-6 md:col-offset-1">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconScheduler"></div>
-                </h2>
-                Biatec scheduler helps anyone on algorand blockchain to execute periodically smart
-                contracts.
-                <div>
-                  <a href="https://scheduler.biatec.io" target="_blank">
-                    <Button class="mt-4">DCA onchain</Button>
-                  </a>
+              </a>
+              <a
+                href="https://router.api.biatec.io/swagger/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Router
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div data-aos="fade-right" class="m-2 md:m-6">
-        <Card class="col-12 md:col-offset-5 md:col-6">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconNFTs"></div>
-                </h2>
-                Besides the gold item NFTs we have issued 1 NFT collection.
-                <div>
-                  <a href="https://nft.biatec.io" target="_blank">
-                    <Button class="mt-4">Get one of our NFTs now</Button>
-                  </a>
+              </a>
+              <a href="https://aramid.finance" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Bridge
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-6 md:col-offset-1">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconAccounting"></div>
-                </h2>
-                Biatec accounting helps you with accounting related issues. In the development is
-                the invoicing application so that you can issue the algorand invoices in legal
-                compliance.
-                <div>
-                  <a href="https://accounting.biatec.io" target="_blank">
-                    <Button class="mt-4">Issue your first invoice today</Button>
-                  </a>
+              </a>
+              <a href="https://wallet.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Wallet
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div data-aos="fade-right" class="m-2 md:m-6">
-        <Card class="col-12 md:col-offset-5 md:col-6">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconIdentity"></div>
-                </h2>
-                <p>Verify your identity to get the best quotes at biatec DEX.</p>
-
-                <div>
-                  <a href="https://identity.biatec.io" target="_blank">
-                    <Button class="mt-4">Verify your identity</Button>
-                  </a>
+              </a>
+              <a href="https://www.vote-coin.com" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  VoteCoin
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-
-      <div v-motion-fade-visible class="m-2 md:m-6">
-        <Card class="col-12 md:col-6 md:col-offset-1">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconAudits"></div>
-                </h2>
-                <p>Do audits of your solution with Biatec.</p>
-                <div>
-                  <a href="https://audits.biatec.io" target="_blank">
-                    <Button class="mt-4">Do audits</Button>
-                  </a>
+              </a>
+              <a href="https://algorand.scan.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Explorer
                 </div>
-              </div>
-            </div>
-          </template>
-        </Card>
-      </div>
-      <div data-aos="fade-right" class="m-2 md:m-6">
-        <Card class="col-12 md:col-offset-5 md:col-6">
-          <template #content>
-            <div class="grid">
-              <div class="col-12">
-                <h2 class="text-primary">
-                  <div class="svg-image" v-html="IconWallet"></div>
-                </h2>
-
-                Biatec Wallet is the first Algorand open source wallet started back in 2021, and is
-                feature rich including multisig support, periodic payment scheduler and multiple dex
-                aggregators support.
-                <div>
-                  <a href="https://wallet.biatec.io" target="_blank">
-                    <Button class="mt-4">Go to the Wallet</Button>
-                  </a>
+              </a>
+              <a href="https://www.explodinos.com" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Explodinos
                 </div>
-              </div>
+              </a>
+              <a href="https://asa.gold" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Gold
+                </div>
+              </a>
+              <a href="https://identity.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Identity
+                </div>
+              </a>
+              <a href="https://scheduler.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Scheduler
+                </div>
+              </a>
+              <a href="https://audits.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Audits
+                </div>
+              </a>
+              <a href="https://gas-station.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Gas station
+                </div>
+              </a>
+              <a href="https://learn.biatec.io" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Learn
+                </div>
+              </a>
+              <a href="/contact-biatec" target="_blank" rel="noopener noreferrer">
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Contact us
+                </div>
+              </a>
+              <a
+                href="https://github.com/scholtz?tab=repositories&q=biatec&type=&language=&sort="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button mx-1 md:mx-2 p-3 md:p-4 px-4 md:px-6 text-sm md:text-lg">
+                  Github
+                </div>
+              </a>
             </div>
-          </template>
-        </Card>
-      </div>
+          </div>
+        </template>
+      </Card>
     </div>
   </Layout>
 </template>
 <style>
 .svg-image {
   height: 3em;
+}
+/** professional button styling with linear gradient */
+.button {
+  background: linear-gradient(45deg, hsl(229, 87%, 32%), hsl(202, 100%, 51%));
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.25em;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background: linear-gradient(45deg, hsl(229, 87%, 42%), hsl(202, 100%, 61%));
+}
+.main-logo {
+  height: 6vh;
+  max-width: 20vw;
+  fill: white;
+  color: red;
+  text-align: left;
+}
+@media (min-width: 1px) {
+  .main-logo {
+    height: 20vh;
+    max-width: 100vw;
+  }
+  .button {
+    min-width: 90vw;
+  }
+}
+@media (min-width: 768px) {
+  .main-logo {
+    height: 10vh;
+  }
+  .button {
+    min-width: 21vw;
+  }
+}
+@media (min-width: 1024px) {
+  .main-logo {
+    height: 15vh;
+  }
+  .button {
+    min-width: 11vw;
+  }
 }
 </style>
