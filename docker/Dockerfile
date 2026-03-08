@@ -1,4 +1,4 @@
-FROM node:20 AS build
+FROM node:lts AS build
 WORKDIR /src
 RUN apt update \
   && apt dist-upgrade -y \
